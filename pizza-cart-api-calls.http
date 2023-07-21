@@ -1,0 +1,41 @@
+###Create a pizza cart
+
+GET https://pizza-api.projectcodex.net/api/pizza-cart/create?username=AkhonaMj
+
+
+###Get all the pizzas
+
+GET https://pizza-api.projectcodex.net/api/pizzas
+
+
+###Add Pizza to a Cart
+
+POST https://pizza-api.projectcodex.net/api/pizzas/api/pizza-cart/add
+content-type: application/json
+{
+	"cart_code" : "df4rty56",
+	"pizza_id" : 23
+}
+
+
+###Remove Pizza to a Cart
+
+GET https://pizza-api.projectcodex.net/api/pizzas/api/pizza-cart/remove
+content-type: application/json
+{
+	"cart_code" : "df4rty56",
+	"pizza_id" : 23
+}
+
+###Add Featured Pizza
+
+POST https://pizza-api.projectcodex.net/api/pizzas/featured
+content-type: application/json
+{
+	"username" : "AkhonaMj",
+	"pizza_id" : 7
+}
+
+#Get Featured Pizzas
+
+GET https://pizza-api.projectcodex.net/api/pizzas/featured
